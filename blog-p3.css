@@ -1,0 +1,194 @@
+       /* Générale ----------------*/
+       
+       body {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+           background: rgb(247, 160, 37);
+           background: linear-gradient(180deg, rgba(247, 160, 37, 0.8155637254901961) 0%, rgba(124, 49, 237, 0.4738270308123249) 60%, rgba(116, 201, 238, 1) 100%);
+       }
+       
+       header {
+           margin: 0;
+           padding: 6px;
+           border: solid 5px lightseagreen;
+       }
+       
+       main {
+           margin-top: 19px;
+       }
+       
+       ul {
+           list-style: none;
+       }
+       
+       li {
+           margin: 5px;
+       }
+       /* Générale FIN ----------------*/
+       /* Raccourcis --------------*/
+       
+       .grid {
+           display: grid;
+       }
+       
+       .gtcol {
+           grid-template-columns: 1fr;
+       }
+       
+       .gtrows {
+           grid-template-rows: 1fr;
+           margin: 6px;
+       }
+       
+       .flex {
+           display: flex;
+       }
+       
+       .jcsb {
+           justify-content: space-between;
+       }
+       
+       .jcc {
+           justify-content: center;
+       }
+       
+       .alignitemsC {
+           align-items: center;
+       }
+       
+       .textalignC {
+           text-align: center;
+       }
+       
+       .img {
+           height: 55vh;
+           width: 79vw;
+           border: solid 2px rgb(119, 10, 182);
+       }
+       /* Raccourcis FIN --------------*/
+       /* Exeptions au détail  ---------------*/
+       
+       h1 {
+           font-family: 'Lobster', cursive;
+           color: rgb(0, 0, 0);
+       }
+       
+       h2 {
+           font-family: 'Pacifico', cursive;
+           color: rgb(243, 75, 75);
+       }
+       
+       .pav {
+           font-family: 'Poppins', sans-serif;
+           font-size: 28px;
+           text-align: center;
+           color: rgb(0, 0, 0);
+       }
+       
+       .navlist {
+           font-size: 24px;
+           font-family: 'Pacifico', cursive;
+           color: lightseagreen;
+       }
+       
+       .next {
+           color: red;
+           font-size: 19px;
+           font-weight: bold;
+       }
+       /* Exeptions au détail FIN ---------------*/
+       /* Logos --------------*/
+       
+       .logo {
+           height: 65px;
+           width: 65px;
+       }
+       /*
+       .burger {
+           height: 37px;
+           width: 37px;
+           display: none;
+       }
+*/
+       /* Logos FIN --------------*/
+       /* Footer -----------------*/
+       
+       footer {
+           font-size: 12px;
+       }
+       
+       .ftrlist {
+           padding: 3px;
+           margin: 1px;
+       }
+       
+       .hdp {
+           font-size: 19px;
+           color: red;
+       }
+       /* Footer FIN-----------------*/
+       /* MediaQuery -------------------------*/
+       
+       @media screen and (max-width:720px) {
+           /* .burger {
+               display: inline;
+           } */
+           .hlist {
+               display: none;
+           }
+       }
+       /* Menu Burger */
+       
+       .sidebar {
+           height: 100%;
+           width: 0;
+           position: fixed;
+           z-index: 1;
+           top: 0;
+           left: 0;
+           background: linear-gradient(90deg, rgba(83, 83, 83, 1) 0%, rgba(199, 194, 194, 1) 99%);
+           overflow-x: hidden;
+           transition: 0.5s;
+           padding-top: 60px;
+       }
+       
+       .sidebar a {
+           padding: 8px 8px 8px 32px;
+           text-decoration: none;
+           font-size: 23px;
+           font-family: 'Lobster', cursive;
+           color: #000000;
+           display: block;
+           transition: 0.3s;
+       }
+       
+       .sidebar a:hover {
+           color: #ff9f20;
+       }
+       
+       .sidebar .closebtn {
+           position: absolute;
+           top: 0;
+           right: 25px;
+           font-size: 36px;
+           margin-left: 50px;
+       }
+       
+       .burger {
+           height: 60px;
+           width: 60px;
+           font-size: 20px;
+           cursor: pointer;
+           border: none;
+       }
+       
+       .burger:hover {
+           height: 61px;
+           width: 61px;
+       }
+       
+       #main {
+           transition: margin-right .5s;
+           padding: 16px;
+       }
